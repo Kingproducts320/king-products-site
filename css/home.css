@@ -1,0 +1,290 @@
+.hero {
+    background: linear-gradient(to right, #f5f7fa, #c3e0e5);
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: 2.8rem;
+    color: #333;
+}
+
+.hero-text .highlight {
+    color: #ff6f61; /* Coral accent */
+}
+
+.hero-text .subheading {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #268bd2;
+}
+
+.hero-text hr {
+    margin: 15px 0;
+    border: none;
+    height: 2px;
+    background-color: #23c0ad;
+    width: 150px;
+}
+
+.hero-text p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #444;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #23c0ad;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #1b9c8f;
+}
+
+.hero-image {
+    flex: 1;
+    padding-left: 300px;
+}
+
+.slides img {
+    width: 400px;
+    height: 500px;
+    display: none;
+    border-radius: 30px;
+}
+.slides img.active {
+    display: block;
+}
+
+/* Our Story Preview */
+.our-story-preview {
+    background-color: #fef6e4;
+    padding: 50px 20px;
+    text-align: center;
+}
+.our-story-preview h2 {
+    font-size: 2rem;
+    color: #d44a00;
+    margin-bottom: 30px;
+}
+.our-story-preview p {
+    margin-top: 10px;
+    color: #555;
+    margin-bottom: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+
+}
+
+/* Product Section */
+.product-section {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+}
+.product-section h2 {
+    font-size: 2.2rem;
+    color: #1551d3;
+}
+.product-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+.product-card {
+    background-color: #ddeef0;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 250px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+.product-card h3 {
+    margin-top: 10px;
+    color: #333;
+}
+.product-card p {
+    font-size: 0.9rem;
+    color: #666;
+}
+.go-card {
+    padding-top: 60px;
+}
+.go-card img {
+    width: 90px;
+    height: 90px;
+}
+
+/* Why Choose Us */
+.why-choose-us {
+    background: #e0f7f4;
+    padding: 60px 20px;
+    text-align: center;
+}
+.why-choose-us h2 {
+    font-size: 2.2rem;
+    color: #444;
+}
+.why-choose-us-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+.choose-card {
+    background-color: #ffffff;
+    border: 2px solid #23c0ad;
+    border-radius: 15px;
+    padding: 20px;
+    width: 220px;
+    transition: transform 0.3s;
+}
+.choose-card:hover {
+    transform: scale(1.05);
+}
+.choose-card span {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 10px;
+}
+.choose-card p {
+    color: #555;
+}
+
+.btn_si {
+    display: inline-block;
+    background-color: #23c0ad;
+    color: white;
+    padding: 10px 35px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn_si:hover {
+    background-color: #1b9c8f;
+}
+
+
+/** For the resonsive window of the hero */
+
+.hero-text {
+    flex: 1;
+}
+.hero-image {
+    flex: 1;
+}
+
+
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;       /* Stack items vertically */
+        align-items: flex-start;      /* Align text to left */
+        padding: 20px;
+    }
+
+    .hero-image {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .hero-image img {
+        width: 100%;                  /* Ensure image is responsive */
+        height: auto;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .language-toggle-switch {
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slides img {
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+.slides img.active {
+    display: block;
+}
+
+/* This is the updated one from GPT */ 
+.slides img {
+    width: 100%;
+    max-width: 400px;     /* Consistent max width */
+    height: 500px;        /* Fixed height */
+    object-fit: cover;    /* Ensures image fills container, cropping if needed */
+    display: none;
+    border-radius: 30px;
+    margin: 0 auto;       /* Center the image */
+}
+
+.slides img.active {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .hero-image {
+        display: none; /* Hides the image on small screens */
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .language-toggle-switch {
+        justify-content: center;
+        width: 100%;
+    }
+}

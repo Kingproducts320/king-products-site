@@ -1,0 +1,169 @@
+.enquiry-section {
+    background-color: #fef6e4;
+    padding: 50px 20px;
+    text-align: center;
+}
+.enquiry-section h2 {
+    font-size: 2rem;
+    color: #d44a00;
+    margin-bottom: 25px;
+}
+.enquiry-section form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.enquiry-section input,
+.enquiry-section textarea {
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 30px;
+    font-size: 1rem;
+}
+.enquiry-section button {
+    background-color: #23c0ad;
+    color: white;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.enquiry-section button:hover {
+    background-color: #1b9c8f;
+}
+
+.contact-section {
+    background-color: #eaf3f9;
+    padding: 40px 20px;
+    text-align: center;
+}
+.contact-section h2 {
+    font-size: 2rem;
+    color: #1551d3;
+    margin-bottom: 20px;
+}
+.contact-details {
+    margin-bottom: 20px;
+}
+.contact-details p {
+    font-size: 1rem;
+    color: #444;
+    margin: 10px 0;
+}
+.contact-details i {
+    margin-right: 10px;
+    color: #23c0ad;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+.social-icons a {
+    color: #1551d3;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+.social-icons a:hover {
+    color: #ff6f61;
+}
+
+/* For the Map Part In the Bottom Part */
+.map-section {
+    background-color: #fef6e4;
+    padding-bottom: 30px;
+}
+.map-section h2 {
+    padding-top: 20px;
+    text-align: center;
+    color: #d44a00;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.map-container {
+    margin-top: 30px;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-left: 30px;
+    margin-right: 30px;
+    box-shadow: #444;
+}
+
+@media (max-width: 768px) {
+    .enquiry-section form {
+        width: 100%;
+    }
+
+    .contact-details p,
+    .social-icons a {
+        font-size: 1rem;
+    }
+}
+
+
+
+/* For the boxes in the social media part */ 
+.contact-section {
+    background-color: #ddeef0;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    color: #1551d3;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.contact-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.contact-item {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.contact-item h3 {
+    color: #23c0ad;
+    margin-bottom: 10px;
+}
+
+.contact-item p {
+    color: #444;
+    font-size: 0.95rem;
+}
+.social-icons a {
+    margin-top: 20px;
+    justify-content: center;
+    padding-left: -10px;
+}
+
+@media (max-width: 768px) {
+    .enquiry-form, .contact-grid {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .contact-item {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us | King Products (Pvt) Ltd</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/common/common.css">
+    <link rel="stylesheet" href="css/about_us.css">
+</head>
+<body>
+    <div class="page-wrapper">
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo">
+            King Products
+        </div>
+    
+        <nav>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul id="navLinks">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#" class="active">ABOUT US</a></li>
+                <li><a href="products.html">PRODUCTS</a></li>
+                <li><a href="quality.html">QUALITY</a></li>
+                <li><a href="contact_us.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Us Content -->
+    <section class="about-section">
+        <div class="tabs">
+            <button class="tab-button active" onclick="showTab('vision')">Our Vision & Mission</button>
+            <button class="tab-button" onclick="showTab('history')">Our History</button>
+            <button class="tab-button" onclick="showTab('future')">Our Future Plans</button>
+            <button class="tab-button" onclick="showTab('distribution')">Our Distribution Network</button>
+        </div>
+
+        <div class="tab-content active" id="vision"> 
+            <div class="part1">
+                <div class="heading-styling">
+                    <h2>Our Vision</h2>
+                    <hr>
+                </div>
+
+                <p>To become a globally recognized supplier of high-quality Sri Lankan spices, herbs, and desserts, while maintaining a strong local presence.<br>
+                    We envision a future where King Products becomes a household name — not only in Sri Lanka but around the world — representing excellence, authenticity, 
+                    and tradition. Through ethical practices, sustainable sourcing, and a strong commitment to innovation, we aim to lead the way in the spice and dessert industry.</p>
+            
+                <div class="heading-styling">   
+                    <h2>Our Mission</h2>
+                    <hr>
+                </div>
+
+                <p>Delivering premium, authentic, and hygienic products from the heart of Sri Lanka to every household — with integrity, care, and innovation.<br>
+                    We are committed to upholding the finest standards in every step of our production process — from sourcing to packaging — to ensure the highest 
+                    quality for our customers. Our mission extends beyond just selling products; we aim to inspire trust and celebrate the vibrant heritage of Sri Lankan flavors with each item we deliver.</p>
+            </div>
+        </div>
+
+        <div class="tab-content" id="history">
+            <h2>Our History</h2>
+            <hr>
+            <p>King Products was founded in July 2024 as a sole proprietorship. Our journey began in the historic city of Galle, nestled along Sri Lanka’s southern coast. What started as a small venture rooted in a deep love for traditional flavors has blossomed into a growing business that caters to a diverse customer base.<br>
+                Driven by passion, supported by our community, and guided by integrity, we have worked diligently to introduce authentic Sri Lankan taste to families, retailers, and small businesses. Our humble beginnings continue to shape our values as we grow.</p>
+        </div>
+
+        <div class="tab-content" id="future">
+            <h2>Our Future Plans</h2>
+            <hr>
+            <p>We aim to expand across Sri Lanka through leading supermarket chains like Keells, and build a strong presence in every corner of the island. Our focus lies in improving product variety, enhancing packaging, and introducing modern distribution methods to serve our customers better.<br>
+                Looking forward, we have set our sights on international markets — taking King Products to the global stage. With a clear vision and strategic planning, we are determined to make our brand synonymous with quality, tradition, and innovation beyond borders.</p>
+        </div>
+        <div class="tab-content" id="distribution">
+            <h2>Our Distribution Network</h2>
+            <hr>
+            <p>To serve our customers with speed, consistency, and care, King Products has built a growing and efficient distribution network across Sri Lanka. We work closely with local distributors and retail partners to ensure that our products are available in both urban and rural areas, with reliable delivery schedules and customer-focused support.<br>
+                Our products are currently distributed throughout the Galle district, and as our operations expand, we are preparing to scale our logistics to serve the entire island — with goals of reaching every major supermarket chain and local retailer.
+                In the near future, we aim to develop an export arm that will introduce King Products to global markets, allowing international customers to enjoy the richness of Sri Lankan spices, herbs, and desserts right from their own homes.</p>
+        </div>
+    </section>
+
+    <!-- Page Up -->
+    <div class="pageup" title="Go to top">
+        <a href="#">↑</a>
+    </div>
+
+      <!-- Footer -->
+      <footer>
+        <p>&copy; 2025 King Products. All rights reserved.</p>
+    </footer>
+
+</div>
+    <script src="js/common/common.js" defer></script>
+    <script src="js/about_us.js" defer></script>
+</body>
+</html>

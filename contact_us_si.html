@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us | King Products (Pvt) Ltd</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/common/common.css">
+    <link rel="stylesheet" href="css/contact_us.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- Header -->
+        <header>
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo">
+                King Products
+            </div>
+            <nav>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div></div><div></div><div></div>
+                </div>
+                <ul id="navLinks">
+                    <li><a href="home_si.html">HOME</a></li>
+                    <li><a href="about_us_si.html">ABOUT US</a></li>
+                    <li><a href="products.html">PRODUCTS</a></li>
+                    <li><a href="quality_si.html">QUALITY</a></li>
+                    <li><a href="#" class="active">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Enquiry Form Section -->
+        <section class="enquiry-section">
+            <h2>දැන් විමසන්න</h2>
+            <form class="enquiry-form" onsubmit="return sendEnquiry(event)">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="text" name="subject" placeholder="Subject" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">විමසීම් යවන්න</button>
+            </form>
+        </section>
+
+        <!-- Contact Info Section -->
+        <section class="contact-section">
+            <h2>අපව අමතන්න</h2>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <h3><i class="fas fa-phone"></i> දුරකථන</h3>
+                    <p>+94 77 123 4567</p>
+                    <p>+94 71 987 6543</p>
+                </div>
+                <div class="contact-item">
+                    <h3><i class="fas fa-landmark"></i> ස්ථාවර දුරකථනය</h3>
+                    <p>+94 11 234 5678</p>
+                </div>
+                <div class="contact-item">
+                    <h3><i class="fas fa-envelope"></i> විද්යුත් තැපෑල</h3>
+                    <p>kingproducts02@gmail.com</p>
+                </div>
+                <div class="contact-item social-icons">
+                    <h3><i class="fas fa-hashtag"></i> අපව අනුගමනය කරන්න</h3><br>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Google Map Section -->
+        <section class="map-section">
+            <h2>අපගේ දේශීය ව්‍යාපාරික ස්ථානය</h2>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3963.732702926932!2d80.025864!3d6.55539!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x75cf5f2020f30c63!2sWijaya%20Products!5e0!3m2!1sen!2sus!4v1604680367729!5m2!1sen!2sus"
+                    width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <!-- Page Up -->
+        <div class="pageup" title="Go to top">
+            <a href="#">↑</a>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 King Products. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="js/common/common.js" defer></script>
+    <script src="js/contact_us.js" defer></script>
+</body>
+</html>

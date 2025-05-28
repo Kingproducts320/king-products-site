@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>King Products (Pvt) Ltd</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/common/common.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- Header -->
+        <header>
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo">
+                King Products
+            </div>
+        
+            <nav>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <ul id="navLinks">
+                    <li><a href="#" class="active">HOME</a></li>
+                    <li><a href="about_us_si.html">ABOUT US</a></li>
+                    <li><a href="products.html">PRODUCTS</a></li>
+                    <li><a href="quality_si.html">QUALITY</a></li>
+                    <li><a href="contact_us_si.html">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+
+                <div class="hero-text">
+                    <h1><span class="highlight">දිවයිනේ කුළුබඩු සහ රසකැවිලි ගවේෂණය කරන්න</span></h1>
+                    <p class="subheading">සම්ප්‍රදාය නැවත සිතා බැලීම</p>
+                    <hr>
+                    <p>
+                        අතින් තෝරාගත් කුළුබඩු වල සිට කටේ දියවන වටලප්පන් දක්වා, King Products ශ්‍රී ලංකාවේ සාරය ගෙන එයි. 
+                        නවීන රසයකින් නිර්මාණය කරන ලද ආදරණීය රසයන් අත්විඳින්න.                </p>
+                    <a href="about_us_si.html" class="btn_si">අපි ගැන</a>
+
+                    <!-- Language Toggle -->
+                    <div class="language-toggle-switch">
+                        <input type="checkbox" id="langToggle" checked onchange="toggleLanguage()">
+                        <label for="langToggle" class="switch">
+                            <span class="toggle-label">සිංහල</span>
+                            <span class="toggle-circle"></span>
+                        </label>                    
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <div class="slider">
+                        <div class="slides">
+                            <img src="images/spice_in_basket1.jpg" alt="Spices in basket" class="active">
+                            <img src="images/spice_in_basket2.jpg" alt="Sri Lankan spices">
+                            <img src="images/spice_in_basket3.jpg" alt="Traditional sweets">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- Our Story Preview -->
+        <section class="our-story-preview">
+            <div class="container">
+                <h2>අපේ කතාව</h2>
+                <p>
+                    අපගේ මිරිස් ගම්මිරිස් ප්‍රවේශමෙන් තෝරා ගැනීමේ සිට 
+                    ඇඹරීමේ සිට අපගේ වටල්ලප්පන් හි මන්දගාමී, මිහිරි 
+                    නිර්මාණය දක්වා, ගුණාත්මකභාවය සහ අව්‍යාජභාවය 
+                    අප කරන සෑම දෙයකම හදවතයි. අපගේ අතින් සාදන 
+                    ලද විශේෂතා හරහා ශ්‍රී ලංකාවේ සැබෑ රසය අත්විඳීමට 
+                    අපි ඔබට ආරාධනා කරන්නෙමු.
+                </p>
+                <a href="about_us_si.html" class="btn">තවත් කියවන්න</a>
+            </div>
+        </section>
+
+        <!-- Product Categories -->
+        <section class="product-section">
+            <h2>අපගේ නිෂ්පාදන කාණ්ඩ ගවේෂණය කරන්න</h2>
+            <div class="product-cards">
+                <div class="product-card" onclick="window.location.href='catogary2.html';">
+                    <img src="images/Home/Desserts_Catogory2.jpg" alt="Desserts">
+                    <h3>අතුරුපස</h3>
+                    <p>සාම්ප්‍රදායික ප්‍රියතමයක් වන අපගේ රසවත් වටලප්පන් සමඟ ඔබේ දවස රසවත් කරන්න.</p>
+                </div>
+                <div class="product-card" onclick="window.location.href='catogary3.html';">
+                    <img src="images/Home/Herbs_Catogary3.jpg" alt="Herbs">
+                    <h3>ඖෂධ පැළෑටි</h3>
+                    <p>සුවඳ සහ රසයෙන් පිරුණු අපගේ උසස් තත්ත්වයේ වියළි ඖෂධ පැළෑටිවලින් ඔබේ කෑම වර්ග අලංකාර කරන්න.</p>
+                </div>
+                <div class="product-card" onclick="window.location.href='catogary1.html';">
+                    <img src="images/Home/Spices_Category.jpg" alt="Spices">
+                    <h3>කුළුබඩු</h3>
+                    <p>වාරික මිරිස් කුඩු සහ තවත් දේවලින් ඔබේ ඉවුම් පිහුම් ආලෝකමත් කරන්න.</p>
+                </div>
+                <div class="product-card go-card" onclick="window.location.href='products.html';">
+                    <img src="images/Home/right.png" alt="Go to Products Page">
+                    <h3>සියලුම නිෂ්පාදන බලන්න</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section class="why-choose-us">
+            <h2>අපව තෝරා ගන්නේ ඇයි?</h2>
+            <div class="why-choose-us-cards">
+                <div class="choose-card">
+                    <span>🧂</span>
+                    <p><strong>ගුණාත්මක අමුද්‍රව්‍ය:</strong><br>හොඳම සහ නැවුම්ම අමුද්‍රව්‍ය පමණයි.</p>
+                </div>
+                <div class="choose-card">
+                    <span>📜</span>
+                    <p><strong>අව්‍යාජ වට්ටෝරු:</strong><br>ශ්‍රී ලාංකික උරුමය තුළ මුල් බැසගත්.</p>
+                </div>
+                <div class="choose-card">
+                    <span>🏠</span>
+                    <p><strong>පරිස්සමෙන් ගෙදර හැදූ:</strong><br>ගෙදර වගේම ආදරයෙන් නිර්මාණය කරන ලද.</p>
+                </div>
+                <div class="choose-card">
+                    <span>😊</span>
+                    <p><strong>පාරිභෝගික තෘප්තිය:</strong><br>අපි ඔබේ සතුට අගය කරනවා.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Page Up -->
+        <div class="pageup" title="Go to top">
+            <a href="#">↑</a>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 King Products. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="js/home.js" defer></script>
+    <script src="js/common/common.js" defer></script></body>
+</html>

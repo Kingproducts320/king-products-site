@@ -1,0 +1,94 @@
+body {
+    font-family: 'Varela Round', sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+  
+.quality-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+  
+.tab-buttons {
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+  
+.tab {
+    flex: 1;
+    padding: 1rem;
+    background-color: #f3f3f3;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#t1 {
+    border-radius: 30px 0px 0px 30px;
+}
+#t2 {
+    border-radius: 0px 30px 30px 0px;
+}
+  
+.tab.active {
+    background-color: #f9c518;
+    color: #000;
+}
+  
+.tab:hover {
+    background-color: #ffe88a;
+}
+  
+.tab-content {
+    display: none;
+}
+  
+.tab-content.active {
+    display: block;
+}
+  
+h1 {
+    color: #d62828;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+  
+.quality-container p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #333;
+    text-align: justify;
+}
+  
+blockquote {
+    margin: 1rem 0;
+    padding-left: 1rem;
+    border-left: 4px solid #ffee99;
+    color: #555;
+    font-style: italic;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #e9e8e8;
+}
+  
+.images {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+    padding-top: 20px;
+}
+  
+.images img {
+    width: 100%;
+    max-width: 350px;
+    border: 2px solid #4caf50;
+    border-radius: 5px;
+}
+  

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quality - King Products</title>
+  <link rel="stylesheet" href="css/common/common.css">
+  <link rel="stylesheet" href="css/quality.css">
+  <link rel="icon" href="images/logo.png">
+</head>
+<body>
+    <div class="page-wrapper">
+    <!-- Header -->
+    <header>
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo">
+                King Products
+            </div>
+
+            <nav>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <ul id="navLinks">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about_us.html">ABOUT US</a></li>
+                    <li><a href="products.html">PRODUCTS</a></li>
+                    <li><a href="#" class="active">QUALITY</a></li>
+                    <li><a href="contact_us.html">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </header>
+
+    <main class="quality-container">
+        <div class="tab-buttons">
+        <button class="tab active" id="t1" onclick="showTab('controlling')">Quality Controlling</button>
+        <button class="tab" id="t2" onclick="showTab('assurance')">Quality Assurance</button>
+        </div>
+
+        <section id="controlling" class="tab-content active">
+        <h1>QUALITY CONTROLLING</h1>
+        <p>
+            Inspecting & Sampling of raw materials which come from selected and the best regular suppliers and performing analysis procedures as per relevant standards for confirming the quality of materials prior to use for processing. Maintaining all physical, chemical & biological parameters & standards throughout the process to be controlled to protect product quality according to food hygiene standards.
+        </p>
+        <p>
+            To preserve the quality of our products, we use food-grade packing material approved by FDA. Good Manufacturing Practices are strictly followed under the close supervision of our Quality Assurance staff, ensuring the highest hygienic standards in the factory.
+        </p>
+        <blockquote>
+            We follow strict quality control procedures and standards to select high-quality raw materials using our standardized methods.
+        </blockquote>
+        <blockquote>
+            We ensure quality control practices are implemented throughout the production process.
+        </blockquote>
+        <div class="images">
+            <img src="images/quality/image1.jpg" alt="Spices" />
+            <img src="images/quality/image2.jpg" alt="Factory" />
+        </div>
+        </section>
+
+        <section id="assurance" class="tab-content">
+        <h1>QUALITY ASSURANCE</h1>
+        <p>
+            Our Quality Assurance team ensures that every stage of production meets industry standards for food safety, hygiene, and consistency. We implement rigorous inspections, batch testing, and cleanliness protocols to safeguard our commitment to quality.
+        </p>
+        <p>
+            Our products undergo multiple checks and validations from procurement to packaging, ensuring traceability and trust at every level.
+        </p>
+        <blockquote>
+            Quality is not just a promise — it's our process.
+        </blockquote>
+        <div class="images">
+            <img src="images/quality/image3.jpg" alt="Quality Team" />
+            <img src="images/quality/image4.png" alt="Lab Testing" />
+        </div>
+        </section>
+    </main>
+
+        <!-- Page Up -->
+        <div class="pageup" title="Go to top">
+            <a href="#">↑</a>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 King Products. All rights reserved.</p>
+        </footer>
+    </div>
+  <script src="js/common/common.js"></script>
+  <script src="js/quality.js"></script>
+</body>
+</html>
