@@ -146,5 +146,18 @@
 
     <script src="js/home.js" defer></script>
     <script src="js/common/common.js" defer></script>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script>
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", (user) => {
+            const hash = window.location.hash;
+            if (!user && hash.includes("invite_token")) {
+                window.netlifyIdentity.open("signup");
+            }
+            });
+            window.netlifyIdentity.init();
+        }
+    </script>
+
 </body>
 </html>
