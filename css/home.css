@@ -68,12 +68,25 @@
     padding-left: 300px;
 }
 
+.hero-image {
+    padding-left: 0;
+    width: 100%;
+}
+
 .slides img {
     width: 400px;
     height: 500px;
     display: none;
     border-radius: 30px;
 }
+
+.slides img {
+    width: 100%;
+    max-width: 400px;
+    height: auto; /* Remove fixed height */
+    aspect-ratio: 4/5; /* Maintain proportion */
+}
+
 .slides img.active {
     display: block;
 }
@@ -96,6 +109,11 @@
     margin-left: 60px;
     margin-right: 60px;
 
+}
+
+.our-story-preview p {
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 /* Product Section */
@@ -124,6 +142,12 @@
     transition: transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
 }
+
+.product-card {
+    width: 100%;
+    max-width: 250px;
+}
+
 .product-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0,0,0,0.15);
@@ -287,4 +311,60 @@
         justify-content: center;
         width: 100%;
     }
+}
+
+/*New part updated by Deeoseek Ai*/
+/* Add these to your home.css */
+
+/* Ensure all images are responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Improve hero section responsiveness */
+@media (max-width: 768px) {
+    .hero {
+        padding: 40px 15px;
+    }
+    
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-text .subheading {
+        font-size: 1.2rem;
+    }
+    
+    .our-story-preview p {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+/* Make product cards stack on mobile */
+@media (max-width: 600px) {
+    .product-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .why-choose-us-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .choose-card {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+h1 {
+    font-size: clamp(1.8rem, 5vw, 2.8rem);
+}
+
+.btn {
+    min-width: 120px;
+    padding: 12px 25px;
 }
