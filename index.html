@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <title>King Products (Pvt) Ltd</title>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Added by newly to the code-->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/common/common.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="icon" href="images/logo.png">
+
 </head>
 <body>
     <!-- Header -->
@@ -146,7 +150,19 @@
 
     
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    
-    
+    <script>
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", (user) => {
+            const hash = window.location.hash;
+            if (!user && hash.includes("invite_token")) {
+                window.netlifyIdentity.open("signup");
+            }
+            });
+            window.netlifyIdentity.init();
+        }
+    </script>
+    <script src="js/home.js" defer></script>
+    <script src="js/common/common.js" defer></script>
+
 </body>
 </html>
