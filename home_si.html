@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="si">
 <head>
     <meta charset="UTF-8">
     <title>King Products (Pvt) Ltd</title>
@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="css/common/common.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="icon" href="images/logo.png">
 </head>
 <body>
     <div class="page-wrapper">
@@ -39,14 +40,14 @@
         <!-- Hero Section -->
         <section class="hero">
             <div class="hero-content">
-
                 <div class="hero-text">
                     <h1><span class="highlight">දිවයිනේ කුළුබඩු සහ රසකැවිලි ගවේෂණය කරන්න</span></h1>
                     <p class="subheading">සම්ප්‍රදාය නැවත සිතා බැලීම</p>
                     <hr>
                     <p>
                         අතින් තෝරාගත් කුළුබඩු වල සිට කටේ දියවන වටලප්පන් දක්වා, King Products ශ්‍රී ලංකාවේ සාරය ගෙන එයි. 
-                        නවීන රසයකින් නිර්මාණය කරන ලද ආදරණීය රසයන් අත්විඳින්න.                </p>
+                        නවීන රසයකින් නිර්මාණය කරන ලද ආදරණීය රසයන් අත්විඳින්න.
+                    </p>
                     <a href="about_us_si.html" class="btn_si">අපි ගැන</a>
 
                     <!-- Language Toggle -->
@@ -55,7 +56,7 @@
                         <label for="langToggle" class="switch">
                             <span class="toggle-label">සිංහල</span>
                             <span class="toggle-circle"></span>
-                        </label>                    
+                        </label>
                     </div>
                 </div>
 
@@ -68,7 +69,6 @@
                         </div>
                     </div>
                 </div>
-                
             </div>
         </section>
 
@@ -119,7 +119,7 @@
             <h2>අපව තෝරා ගන්නේ ඇයි?</h2>
             <div class="why-choose-us-cards">
                 <div class="choose-card">
-                    <span>🧂</span>
+                    <span>🪢</span>
                     <p><strong>ගුණාත්මක අමුද්‍රව්‍ය:</strong><br>හොඳම සහ නැවුම්ම අමුද්‍රව්‍ය පමණයි.</p>
                 </div>
                 <div class="choose-card">
@@ -149,5 +149,21 @@
     </div>
 
     <script src="js/home.js" defer></script>
-    <script src="js/common/common.js" defer></script></body>
+    <script src="js/common/common.js" defer></script>
+
+    <!-- Language Toggle Script -->
+    <script>
+        function toggleLanguage() {
+            const isSinhala = document.getElementById('langToggle').checked;
+            const label = document.querySelector('.toggle-label');
+            label.textContent = isSinhala ? 'සිංහල' : 'English';
+
+            const path = window.location.pathname;
+            if (!isSinhala) {
+                // Switch to English homepage
+                window.location.href = 'index.html';
+            }
+        }
+    </script>
+</body>
 </html>
