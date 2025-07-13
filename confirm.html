@@ -3,20 +3,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Confirming...</title>
 </head>
+  
 <body>
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  <script>
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.on("init", (user) => {
-        const hash = window.location.hash;
-        if (!user && hash.includes("invite_token")) {
-          window.netlifyIdentity.open("signup");
-        }
-      });
-      window.netlifyIdentity.init();
-    }
-  </script>
+  <div class="page-wrapper">
+    <!-- all content here -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", (user) => {
+          const hash = window.location.hash;
+          if (!user && hash.includes("invite_token")) {
+            window.netlifyIdentity.open("signup");
+          }
+        });
+        window.netlifyIdentity.init();
+      }
+    </script>
+  </div>
 </body>
 </html>
