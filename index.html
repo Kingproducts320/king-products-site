@@ -115,7 +115,7 @@
         <h2>Why Choose Us?</h2>
         <div class="why-choose-us-cards">
             <div class="choose-card">
-                <span>🡢</span>
+                <span>🧂</span>
                 <p><strong>Quality Ingredients:</strong><br>Only the finest and freshest ingredients.</p>
             </div>
             <div class="choose-card">
@@ -143,10 +143,33 @@
         <p>&copy; 2025 King Products. All rights reserved.</p>
     </footer>
 
+    <!-- Scripts -->
     <script src="js/home.js" defer></script>
     <script src="js/common/common.js" defer></script>
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+    <!-- Language Toggle + Netlify Identity -->
     <script>
+        // Language toggle
+        function toggleLanguage() {
+            const isSinhala = document.getElementById('langToggle').checked;
+            const label = document.querySelector('.toggle-label');
+            label.textContent = isSinhala ? 'සිංහල' : 'English';
+
+            const path = window.location.pathname;
+
+            if (isSinhala) {
+                if (path === "/" || path.includes("index.html")) {
+                    window.location.href = "home_si.html";
+                }
+            } else {
+                if (path.includes("home_si.html")) {
+                    window.location.href = "index.html";
+                }
+            }
+        }
+
+        // Netlify Identity logic for invite token
         if (window.netlifyIdentity) {
             window.netlifyIdentity.on("init", (user) => {
                 const hash = window.location.hash;
@@ -155,23 +178,6 @@
                 }
             });
             window.netlifyIdentity.init();
-        }
-
-        // Fix toggleLanguage function if it's not defined in JS
-        function toggleLanguage() {
-            const isSinhala = document.getElementById('langToggle').checked;
-            const label = document.querySelector('.toggle-label');
-            label.textContent = isSinhala ? 'සිංහල' : 'English';
-            const currentPage = window.location.pathname;
-            if (isSinhala) {
-                if (currentPage.includes("home.html")) {
-                    window.location.href = "home_si.html";
-                }
-            } else {
-                if (currentPage.includes("home_si.html")) {
-                    window.location.href = "home.html";
-                }
-            }
         }
     </script>
 </body>
