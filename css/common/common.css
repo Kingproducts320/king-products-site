@@ -310,4 +310,17 @@ main {
         font-size: 1.8rem;
     }
 }
+/*Same day but adjusting issues when adding home to logo */
+.logo {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.logo img {
+    height: 40px;
+}
 
