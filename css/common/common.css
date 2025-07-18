@@ -330,7 +330,7 @@ main {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: #005BAC; /* adjust to your blue */
+    background-color: #1551d3; /* adjust to your blue */
     transition: top 0.3s ease-in-out;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
