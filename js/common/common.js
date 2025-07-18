@@ -6,4 +6,8 @@
 function toggleMenu() {
     document.getElementById('navLinks').classList.toggle('show');
 }
-4
+
+function toggleMenu() {
+  const navLinks = document.getElementById("navLinks");
+  navLinks.classList.toggle("show");
+}
