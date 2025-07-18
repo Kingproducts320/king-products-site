@@ -323,4 +323,33 @@ main {
     }
 }
 
+/* Sticky Header with Scroll Hide Feature */
+#mainHeader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #005BAC; /* adjust to your blue */
+    transition: top 0.3s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Push content down so header doesn't overlap */
+body {
+    padding-top: 70px; /* Adjust depending on header height */
+}
+@media (max-width: 768px) {
+    #mainHeader {
+        padding: 10px 15px;
+    }
+
+    .logo img {
+        height: 30px;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+}
 
