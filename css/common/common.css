@@ -255,3 +255,48 @@ main {
     font-size: 20px;
     display: none;
 }
+
+
+/*New update from chatgpt in the 2025 / 18 / 07 */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .hero-image {
+    display: none;
+  }
+
+  .hero-text {
+    width: 100%;
+  }
+
+  .language-toggle-switch {
+    justify-content: center;
+    width: 100%;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 40px;
+    width: 200px;
+    padding: 25px;
+    border-radius: 30px;
+    background-color: #189AB4;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    z-index: 999;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
