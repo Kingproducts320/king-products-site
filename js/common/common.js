@@ -26,3 +26,27 @@ window.addEventListener('scroll', () => {
     }
     lastScrollY = window.scrollY;
 });
+
+// These updates are for work navigation bar in smaller display and windows. These updates are update on 7/19/2025
+let prevScrollPos = window.scrollY;
+const header = document.querySelector('.header');
+
+window.addEventListener('scroll', function () {
+  const currentScrollPos = window.scrollY;
+
+  // Always show the header when at top of page
+  if (currentScrollPos <= 0) {
+    header.style.top = '0';
+  }
+  // Show header if scrolling up
+  else if (prevScrollPos > currentScrollPos) {
+    header.style.top = '0';
+  }
+  // Hide header if scrolling down
+  else {
+    header.style.top = `-${header.offsetHeight}px`;
+  }
+
+  prevScrollPos = currentScrollPos;
+});
+
