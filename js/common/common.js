@@ -1,30 +1,25 @@
 // common.js
 
-// Hamburger menu toggle for small screens
+// Hamburger menu toggle
 function toggleMenu() {
-    const navLinks = document.getElementById("navLinks");
-    navLinks.classList.toggle("show");
+  const navLinks = document.getElementById("navLinks");
+  navLinks.classList.toggle("show");
 }
 
-// Hide header on scroll down, show on scroll up
+// Header hide on scroll down, show on scroll up
 let prevScrollPos = window.scrollY;
-const header = document.querySelector('header'); // Use the actual <header> element
+const header = document.querySelector('header');
 
 window.addEventListener('scroll', () => {
-    const currentScrollPos = window.scrollY;
+  const currentScrollPos = window.scrollY;
 
-    // Always show header at top
-    if (currentScrollPos <= 0) {
-        header.style.top = '0';
-    }
-    // Show header when scrolling up
-    else if (prevScrollPos > currentScrollPos) {
-        header.style.top = '0';
-    }
-    // Hide header when scrolling down
-    else {
-        header.style.top = `-${header.offsetHeight}px`;
-    }
+  if (currentScrollPos <= 0) {
+    header.style.top = '0';
+  } else if (prevScrollPos > currentScrollPos) {
+    header.style.top = '0';
+  } else {
+    header.style.top = `-${header.offsetHeight}px`;
+  }
 
-    prevScrollPos = currentScrollPos;
+  prevScrollPos = currentScrollPos;
 });
