@@ -1,4 +1,6 @@
-/* Reset and Base Styles */
+/* common.css */
+
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
@@ -6,144 +8,148 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
-  background-color: #f9f9f9;
+  background-color: #fdfdfd;
+  color: #333;
+  overflow-x: hidden; /* Fix for horizontal scroll issue */
 }
 
-/* Header Styles */
+/* Header */
 header {
-  background-color: #1551d3;
-  color: white;
-  padding: 0.5rem 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  z-index: 999;
+  transition: top 0.3s;
+}
+
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  transition: transform 0.3s ease-in-out;
-  height: 70px;
+  padding: 15px 30px;
+  max-width: 1200px;
+  margin: auto;
 }
 
-header.hide {
-  transform: translateY(-100%);
-}
-
-/* Logo */
-.logo {
-  display: flex;
-  align-items: center;
+.navbar h1 {
+  font-size: 24px;
   font-weight: bold;
-  font-size: 1.5rem;
-  gap: 10px;
+  color: #d32f2f;
 }
 
-.logo img {
-  height: 50px;
-  width: auto;
-  object-fit: contain;
-  border-radius: 8px;
-}
-
-/* Navigation */
-nav {
+.navbar nav ul {
   display: flex;
-  align-items: center;
-}
-
-nav ul {
   list-style: none;
-  display: flex;
-  gap: 1rem;
 }
 
-nav ul li a {
-  color: white;
+.navbar nav ul li {
+  margin-left: 20px;
+}
+
+.navbar nav ul li a {
   text-decoration: none;
-  padding: 8px 12px;
-  transition: background-color 0.3s;
-  border-radius: 4px;
+  color: #333;
+  padding: 8px 4px;
+  border-bottom: 3px solid transparent;
+  transition: border-color 0.3s;
 }
 
-nav ul li a:hover,
-nav ul li a.active {
-  background-color: rgba(255, 255, 255, 0.2);
+.navbar nav ul li a:hover {
+  border-bottom: 3px solid #d32f2f;
 }
 
-/* Hamburger Menu */
+.navbar nav ul li a.active {
+  border-bottom: 3px solid #d32f2f; /* Red underline for current page */
+}
+
+/* Hamburger Button (for small screens) */
 .hamburger {
   display: none;
-  flex-direction: column;
+  font-size: 28px;
   cursor: pointer;
-  gap: 4px;
+  background: none;
+  border: none;
 }
 
-.hamburger div {
-  width: 25px;
-  height: 3px;
-  background-color: white;
-  border-radius: 2px;
+/* Navigation Links - Default Hidden on Small Screens */
+#navLinks {
+  display: flex;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-  header {
-    flex-wrap: wrap;
-    height: auto;
-    padding: 0.5rem;
-  }
+#navLinks.show {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 70px;
+  right: 30px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
 
-  .logo {
-    flex: 1 0 100%;
-    justify-content: center;
-    margin-bottom: 0.5rem;
-  }
+/* Footer */
+footer {
+  background-color: #222;
+  color: #eee;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
 
-  nav {
-    flex: 1 0 100%;
-    flex-direction: column;
-    align-items: flex-end;
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .navbar nav ul {
+    display: none;
   }
 
   .hamburger {
-    display: flex;
+    display: block;
   }
 
-  nav ul {
-    flex-direction: column;
-    align-items: flex-end;
-    width: 100%;
+  #navLinks {
     display: none;
-    background-color: #1551d3;
-    padding: 0.5rem 1rem;
+    width: fit-content;
+    min-width: 150px;
+    right: 20px;
+    top: 65px;
   }
 
-  nav ul.show {
+  #navLinks.show {
     display: flex;
   }
 
-  nav ul li {
+  #navLinks li {
+    margin: 10px 0;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    padding: 15px 20px;
+  }
+
+  .navbar h1 {
     width: 100%;
-    text-align: right;
-    padding: 0.3rem 0;
+    text-align: center;
+    margin-bottom: 10px;
   }
 
-  .logo img {
-    height: 45px;
+  .hamburger {
+    position: absolute;
+    right: 20px;
+    top: 20px;
   }
 }
 
-/* Page Wrapper */
-.page-wrapper {
+/* Container spacing fix */
+.container {
   max-width: 1200px;
-  margin: auto;
-  padding: 0 15px;
-}
-
-/* Add transitions for smoothness */
-header,
-.logo img,
-nav ul li a {
-  transition: all 0.3s ease;
+  margin: 0 auto;
+  padding: 20px;
 }
