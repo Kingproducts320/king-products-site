@@ -353,3 +353,68 @@ body {
     }
 }
 
+
+/*The updated fix for work on the smaller displays and windows and this update is on 7/19/2025. */
+/* ========= HEADER FIXES ========= */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1551d3; /* Your original blue */
+  z-index: 999;
+  transition: top 0.3s;
+  padding: 10px 20px; /* Add padding for breathing room */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+/* Logo should not shrink vertically or stretch */
+.header img {
+  height: 50px;   /* Fixed height */
+  width: auto;    /* Maintain aspect ratio */
+  object-fit: contain;
+}
+
+/* Make sure nav links don’t compress too much */
+.header nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+}
+
+/* ========= RESPONSIVE FIXES ========= */
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 8px 16px;
+  }
+
+  .header img {
+    height: 45px;
+  }
+
+  .header nav {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header img {
+    height: 40px;
+  }
+
+  .header nav {
+    font-size: 14px;
+    gap: 8px;
+  }
+}
+
+
+
